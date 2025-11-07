@@ -69,16 +69,18 @@ The dataset includes both categorical and numerical features:
 
 | Model | Accuracy | F1 Score | ROC AUC |
 |-------|----------|----------|---------|
-| Baseline MLP | 0.853 | 0.652 | 0.908 |
-| Tuned MLP | 0.853 | 0.662 | 0.907 |
+| Baseline MLP | 0.847 | 0.660 | 0.909 |
+| Tuned MLP | 0.847 | 0.649 | 0.908 |
 
 ### Key Findings
 
 1. Both models achieve approximately 85% accuracy on the holdout set
-2. The tuned MLP shows marginal improvement in F1 score (0.662 vs 0.652)
-3. ROC AUC scores are nearly identical, indicating strong class discrimination
-4. The model correctly predicts the majority of <=50K cases but struggles with the minority >50K class (approximately 44% false negative rate)
-5. Feature importance analysis reveals education level, age, and hours worked per week as primary predictors
+2. The baseline MLP slightly outperforms the tuned model in F1 score (0.660 vs 0.649) and ROC AUC (0.909 vs 0.908)
+3. The tuned model exhibits a higher false negative rate (516 vs 480), missing more high-income individuals
+4. Both models correctly predict the majority of <=50K cases but struggle with the minority >50K class (approximately 41% false negative rate for tuned, 38% for baseline)
+5. The baseline model achieves better recall for the positive class (0.62 vs 0.59), likely because the tuned model required more extensive training to fully converge with its optimized architecture
+6. Limited training iterations (max_iter=200) may have prevented the tuned model from reaching its full potential, suggesting that extended training could improve performance
+7. Feature importance analysis reveals education level, age, and hours worked per week as primary predictors
 
 ### Visualizations
 
@@ -198,7 +200,6 @@ joblib
 ## Authors
 
 Group 11
-William Donnell-Lonon and Emma Ewing
 
 ## License
 
