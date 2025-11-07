@@ -161,7 +161,7 @@ Future work should balance model complexity, interpretability, and computational
 
 | File                            | Description                                                     |
 | ------------------------------- | --------------------------------------------------------------- |
-| `ML_Project2.9.ipynb`           | Main notebook for preprocessing, model training, and evaluation |
+| `ML_Project2.ipynb`             | Main notebook for preprocessing, model training, and evaluation |
 | `ML_Project2.pptx`              | Presentation summarizing project results and conclusions        |
 | `project_adult.csv`             | Training dataset                                                |
 | `project_validation_inputs.csv` | Validation dataset                                              |
