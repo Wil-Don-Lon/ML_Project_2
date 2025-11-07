@@ -200,6 +200,8 @@ joblib
 ## Authors
 
 Group 11
+William Donnell-Lonon
+Emma Ewing
 
 ## License
 
