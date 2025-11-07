@@ -1,6 +1,4 @@
-Sure — here’s a clean, **plain Markdown** version of your README, written in a professional tone and ready to drop straight into GitHub as `README.md`:
 
----
 
 # Adult Income Classification – Machine Learning Project 2
 
@@ -168,6 +166,3 @@ Future work should balance model complexity, interpretability, and computational
 | `project_adult.csv`             | Training dataset                                                |
 | `project_validation_inputs.csv` | Validation dataset                                              |
 
----
-
-Would you like me to add a short “how to run” section (dependencies and steps to execute the notebook)? It would make this perfect for GitHub.
